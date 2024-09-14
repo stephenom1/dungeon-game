@@ -1,0 +1,138 @@
+@font-face {
+  font-family: fancy;
+  src: url(King-Arthur-Legend.ttf);
+}
+
+html {
+  background-color: grey;
+  background-image: url(background.jpeg);
+  background-size: cover;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+#intro {
+  background-color: grey;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 2em 10em;
+}
+
+#intro p {
+  background-color: grey;
+  font-family: arial;
+  margin: 1em 7em;
+}
+
+.red {
+  color: darkred;
+}
+
+h1, h2, h3 {
+  font-family: fancy, arial;
+  margin-top: 0;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    margin: 1em auto;
+}
+
+#play-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: fancy, arial;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#game-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: fancy, arial;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#game-info h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+#game-info p {
+  margin: 0;
+}
+
+#health-bar {
+  width: 200px;
+  height: 20px;
+  border: 2px solid black;
+}
+
+#health {
+  height: 100%;
+  background-color: green;
+  transition: width 0.2s ease-in-out;
+}
+
+#game-info #time {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+#game-info #round {
+  margin-left: 10px;
+}
+
+#game-info #enemies-defeated {
+  margin-left: 10px;
+}
+
+#game-info #score {
+  margin-left: 10px;
+}
